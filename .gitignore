@@ -6,9 +6,6 @@ frontend/node_modules/
 backend/dist/
 frontend/dist/
 
-# Environment files
-backend/.env
-
 # Logs
 *.log
 npm-debug.log*
