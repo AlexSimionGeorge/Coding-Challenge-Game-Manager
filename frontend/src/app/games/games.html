@@ -1,0 +1,12 @@
+<div class="games-container">
+  <div class="games-header">
+    <h2>All Games</h2>
+    <button class="primary-btn" (click)="onAddNew()">Add New Game</button>
+  </div>
+
+  <app-table-view (editGame)="onEditGame($event)"></app-table-view>
+
+  @if (showForm) {
+    <app-games-form [game]="selectedGame" (formSubmitted)="onFormSubmitted()"></app-games-form>
+  }
+</div>

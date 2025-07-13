@@ -1,0 +1,33 @@
+<div class="modal-backdrop">
+  <div class="modal">
+    <h2>{{ game ? 'Edit Game' : 'Add New Game' }}</h2>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="game-form">
+      <label>
+        <span>Name</span>
+        <input formControlName="name" />
+      </label>
+
+      <label>
+        <span>Title</span>
+        <input formControlName="title" />
+      </label>
+
+      <label>
+        <span>Description</span>
+        <textarea formControlName="description"></textarea>
+      </label>
+
+      <label>
+        <span>Image URL</span>
+        <input formControlName="imageUrl" />
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" [disabled]="form.invalid" class="primary-btn">
+          {{ game ? 'Update' : 'Create' }} Game
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

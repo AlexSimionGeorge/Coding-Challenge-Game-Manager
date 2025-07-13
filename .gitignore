@@ -1,0 +1,44 @@
+# Node modules (backend and frontend)
+backend/node_modules/
+frontend/node_modules/
+
+# Build output folders
+backend/dist/
+frontend/dist/
+
+# Environment files
+backend/.env
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Angular specific
+frontend/.angular/
+frontend/.firebase/
+frontend/out-tsc/
+frontend/tmp/
+frontend/.cache/
+
+# NestJS specific
+backend/.nestjs/
+
+# TypeScript
+*.tsbuildinfo
+
+# Prisma generated files (optional)
+backend/prisma/generated/
+
+# Others
+frontend/src/**/*.js
+frontend/src/**/*.js.map

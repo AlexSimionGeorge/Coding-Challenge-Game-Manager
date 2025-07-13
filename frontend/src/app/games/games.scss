@@ -1,0 +1,36 @@
+.games-container {
+  width: 75%;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.games-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin: 0;
+  color: #333;
+  text-align: center;
+}
+
+
+.primary-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.primary-btn:hover {
+  opacity: 0.9;
+}

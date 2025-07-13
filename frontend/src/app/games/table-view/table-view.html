@@ -1,0 +1,24 @@
+@if (isLoading) {
+  <div>Loading games...</div>
+} @else if (error) {
+  <div>{{ error }}</div>
+} @else {
+  @for (game of games; track game.id) {
+    <div class="game-card">
+      <div class="game-image">
+        <img [src]="game.imageUrl" alt="{{ game.name }}" />
+      </div>
+
+      <div class="game-details">
+        <h2>{{ game.name }}</h2>
+        <p class="game-title">{{ game.title }}</p>
+        <p class="game-description">{{ game.description }}</p>
+      </div>
+
+      <div class="game-actions">
+        <button (click)="onEdit(game)">Edit</button>
+        <button (click)="onDelete(game)">Delete</button>
+      </div>
+    </div>
+  }
+}
