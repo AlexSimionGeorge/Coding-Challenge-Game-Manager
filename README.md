@@ -2,7 +2,7 @@
 
 ## Setup and Run
 
-### 1. Start services with Docker Compose
+### 1. Start with Docker Compose & dependency installation
 
 Make sure you have Docker and Docker Compose installed.
 
@@ -10,6 +10,15 @@ From the project root, run:
 
 ```bash
 docker-compose up -d
+```
+```bash
+cd backend
+npm install
+```
+```bash
+cd ../frontend
+npm install
+cd ..
 ```
 
 ### 2. Initialize the database with Prisma
